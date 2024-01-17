@@ -13,32 +13,41 @@
         <p>PhD Researcher in <research area></p>
     </header>
 
-    <section>
+    <section class="expandable" onclick="toggleSection('about-me')">
         <h2>About Me</h2>
-        <p><placeholder>About me text.</placeholder></p>
+        <div id="about-me" class="content">
+            <p><placeholder>About me text.</placeholder></p>
+        </div>
     </section>
 
-    <section>
+    <section class="expandable" onclick="toggleSection('research-interests')">
         <h2>Research Interests</h2>
-        <p><placeholder>Brief description of your research interests.</placeholder></p>
+        <div id="research-interests" class="content">
+            <p><placeholder>Brief description of your research interests.</placeholder></p>
+        </div>
     </section>
 
-    <section>
+    <section class="expandable" onclick="toggleSection('publications')">
         <h2>Publications</h2>
-        <p><placeholder>List of your publications.</placeholder></p>
+        <div id="publications" class="content">
+            <p><placeholder>List of your publications.</placeholder></p>
+        </div>
     </section>
 
-    <section>
+    <section class="expandable" onclick="toggleSection('contact-info')">
         <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:YourEmail@example.com"><placeholder>YourEmail@example.com</placeholder></a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><placeholder>https://www.linkedin.com/in/yourprofile</placeholder></a></p>
-        <p>Twitter: <a href="https://twitter.com/yourhandle" target="_blank"><placeholder>https://twitter.com/yourhandle</placeholder></a></p>
+        <div id="contact-info" class="content">
+            <p>Email: <a href="mailto:YourEmail@example.com"><placeholder>YourEmail@example.com</placeholder></a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><placeholder>https://www.linkedin.com/in/yourprofile</placeholder></a></p>
+            <p>Twitter: <a href="https://twitter.com/yourhandle" target="_blank"><placeholder>https://twitter.com/yourhandle</placeholder></a></p>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
 
